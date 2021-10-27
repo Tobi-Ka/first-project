@@ -1,0 +1,88 @@
+html,
+body {
+    height: 100% !important;
+    width: 100% !important;
+    color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.half {
+    height: 100%;
+    float: left;
+}
+
+.left {
+    width: 45%;
+    background-color: fuchsia;
+    display: table;
+}
+
+.right {
+    width: 55%;
+}
+
+.text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.left .text h1 {
+    font-size: 5em;
+}
+
+.left .text p {
+    font-size: 1.5em;
+}
+
+.section {
+    display: table;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section h1 {
+    font-size: 3em;
+}
+
+.section p {
+    font-size: 1em;
+}
+
+.half .upper,
+.half .lower {
+    width: 100%;
+    height: 40%;
+}
+
+
+.half.right {
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
